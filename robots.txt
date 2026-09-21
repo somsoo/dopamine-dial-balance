@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dopamine-dial-balance.enjoy-onepage.com/sitemap.xml
