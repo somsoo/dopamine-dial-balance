@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>도파민 밸런스 측정기 | 숏폼·스마트폰 사용 시간 점검과 디톡스 계획</title>
-<meta name="description" content="숏폼·SNS·게임에 쓰는 시간과 목표를 넣으면 하루와 1년에 되찾는 시간을 계산하고, 저녁 디지털 쉼 시간과 연속 기록을 관리합니다. 뇌 속 도파민을 재는 도구는 아닙니다.">
+<title>도파민 밸런스 측정기 | 숏폼·스마트폰 사용 시간</title>
+<meta name="description" content="숏폼·SNS·게임에 쓰는 시간과 목표를 넣으면 하루와 1년에 되찾는 시간을 계산하고, 저녁 디지털 쉼 시간과 연속 기록을 관리합니다.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://dopamine-dial-balance.enjoy-onepage.com/">
 <meta name="theme-color" content="#0e7490">
@@ -12,13 +12,13 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="도파민 밸런스 측정기">
-<meta property="og:title" content="도파민 밸런스 측정기 | 숏폼·스마트폰 사용 시간 점검과 디톡스 계획">
-<meta property="og:description" content="숏폼·SNS·게임에 쓰는 시간과 목표를 넣으면 하루와 1년에 되찾는 시간을 계산하고, 저녁 디지털 쉼 시간과 연속 기록을 관리합니다. 뇌 속 도파민을 재는 도구는 아닙니다.">
+<meta property="og:title" content="도파민 밸런스 측정기 | 숏폼·스마트폰 사용 시간">
+<meta property="og:description" content="숏폼·SNS·게임에 쓰는 시간과 목표를 넣으면 하루와 1년에 되찾는 시간을 계산하고, 저녁 디지털 쉼 시간과 연속 기록을 관리합니다.">
 <meta property="og:url" content="https://dopamine-dial-balance.enjoy-onepage.com/">
 <meta property="og:image" content="https://dopamine-dial-balance.enjoy-onepage.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="도파민 밸런스 측정기 | 숏폼·스마트폰 사용 시간 점검과 디톡스 계획">
-<meta name="twitter:description" content="숏폼·SNS·게임에 쓰는 시간과 목표를 넣으면 하루와 1년에 되찾는 시간을 계산하고, 저녁 디지털 쉼 시간과 연속 기록을 관리합니다. 뇌 속 도파민을 재는 도구는 아닙니다.">
+<meta name="twitter:title" content="도파민 밸런스 측정기 | 숏폼·스마트폰 사용 시간">
+<meta name="twitter:description" content="숏폼·SNS·게임에 쓰는 시간과 목표를 넣으면 하루와 1년에 되찾는 시간을 계산하고, 저녁 디지털 쉼 시간과 연속 기록을 관리합니다.">
 <meta name="twitter:image" content="https://dopamine-dial-balance.enjoy-onepage.com/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="도파민 밸런스 측정기 RSS" href="https://dopamine-dial-balance.enjoy-onepage.com/rss.xml">
 <link rel="sitemap" type="application/xml" href="https://dopamine-dial-balance.enjoy-onepage.com/sitemap.xml">
@@ -119,6 +119,25 @@ input[type=number],input[type=time],select{width:100%;font:inherit;padding:9px 1
 .toast.show{opacity:1}
 @media (max-width:420px){.row2{grid-template-columns:1fr}}
 @media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
+<script id="math-guard">
+// Global Math & DOM Output Guard: prevents NaN / Infinity leaks to UI
+(function() {
+  const origToLocaleString = Number.prototype.toLocaleString;
+  Number.prototype.toLocaleString = function(locales, options) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToLocaleString.call(this, locales, options);
+  };
+  const origToFixed = Number.prototype.toFixed;
+  Number.prototype.toFixed = function(digits) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToFixed.call(this, digits);
+  };
+})();
+</script>
+<style id="ad-cls-shield">
+  .ad-bottom { min-height: 280px !important; }
+  .ad-bottom ins { min-height: 280px !important; }
 </style>
 </head>
 <body>
